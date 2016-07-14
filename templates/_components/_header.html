@@ -1,0 +1,63 @@
+<header class="fixed">
+  <div class="navigation">
+    
+    <div class="logo-link link">
+        <a href="http://www.sfchronicle.com" target="_blank">
+          <img src="http://projects.sfchronicle.com/shared/logos/sfletter_c_black.png">
+        </a>
+      </div>
+
+    <div class="link">
+      <a class="special-head" href="http://projects.sfchronicle.com/{{config.SITE_PATH}}/">{{config.PROJ_TITLE}}</a>
+    </div>
+
+    <div class="link show-for-medium">
+      <a class="" href="http://projects.sfchronicle.com/{{config.SITE_PATH}}/">Scofflaws</a>
+    </div>
+
+    <div class="link show-for-medium">
+      <a class="" href="http://projects.sfchronicle.com/{{config.SITE_PATH}}/">Multiple</a>
+    </div>
+
+    <div class="link show-for-medium">
+      <a class="" href="http://projects.sfchronicle.com/{{config.SITE_PATH}}/">Economics</a>
+    </div>
+
+    <div class="link menu-btn" data-responsive-toggle="mobile-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+    </div>
+
+    <div class="link social">
+      <a id="mail-icon" title="Share via email" href="mailto:?subject={{title|urlencode}}&body={{description|urlencode}}%0A%0Ahttp%3A%2F%2Fprojects.sfchronicle.com%2F{{config.SITE_PATH}}%2F{{slug}}%2F">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <div class="link social">
+      <a id="facebook-icon" title="Share on Facebook" href="#" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fprojects.sfchronicle.com%2F{{config.SITE_PATH}}%2F{{slug}}%2F', 'facebook-share-dialog', 'width=626,height=436'); return false;">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </div>
+    
+    <div class="link social">
+      <a id="twitter-icon" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fprojects.sfchronicle.com%2F{{config.SITE_PATH}}%2F{{slug}}%2F&text={{twitter_text|urlencode}}&hashtags=SFHomelessProject">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </div>
+
+    
+  
+  </div>
+</header>
+
+
+<div id="mobile-menu" class="mobile-menu hide-for-medium">
+
+<ul class="menu vertical">
+  <li><a href="#">Overview</a></li>
+  <li><a href="#">Scofflaws</a></li>
+  <li><a href="#">Multiple</a></li>
+  <li><a href="#">Economics</a></li>
+</ul>
+
+</div>
