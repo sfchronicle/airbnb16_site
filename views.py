@@ -9,6 +9,9 @@ app.config['SITE_PATH'] = "2016/airbnb"
 # Project Title
 app.config['PROJ_TITLE'] = "Airbnb 2016"
 
+# Project Hashtag
+app.config['HASHTAG'] = 'Airbnb2016'
+
 """
 slug completes:
 - twitter:url
@@ -39,7 +42,7 @@ def index():
     	twitter_text="")
 
 @app.route('/scofflaws/')
-def insight():
+def scofflaws():
     return render_template('scofflaws.html',
         slug='',
         title='',
@@ -47,7 +50,7 @@ def insight():
         twitter_text='')
 
 @app.route('/multiple/')
-def photos():
+def multiple():
     return render_template('multiple.html',
         slug='',
         title='',
@@ -55,16 +58,8 @@ def photos():
         twitter_text='')
 
 @app.route('/economics/')
-def data():
+def economics():
     return render_template('economics.html',
-        slug='',
-        title='',
-        description="",
-        twitter_text='')
-
-@app.route('/methodology/')
-def shelters():
-    return render_template('methodology.html',
         slug='',
         title='',
         description="",

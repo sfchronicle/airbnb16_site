@@ -8,19 +8,19 @@
       </div>
 
     <div class="link">
-      <a class="special-head" href="http://projects.sfchronicle.com/{{config.SITE_PATH}}/">{{config.PROJ_TITLE}}</a>
+      <a class="special-head" href="{{url_for('index')}}">{{config.PROJ_TITLE}}</a>
     </div>
 
     <div class="link show-for-medium">
-      <a class="" href="http://projects.sfchronicle.com/{{config.SITE_PATH}}/">Scofflaws</a>
+      <a href="{{url_for('scofflaws')}}">Scofflaws</a>
     </div>
 
     <div class="link show-for-medium">
-      <a class="" href="http://projects.sfchronicle.com/{{config.SITE_PATH}}/">Multiple</a>
+      <a href="{{url_for('multiple')}}">Multiple</a>
     </div>
 
     <div class="link show-for-medium">
-      <a class="" href="http://projects.sfchronicle.com/{{config.SITE_PATH}}/">Economics</a>
+      <a href="{{url_for('economics')}}">Economics</a>
     </div>
 
     <div class="link menu-btn" data-responsive-toggle="mobile-menu" data-hide-for="medium">
@@ -28,19 +28,19 @@
     </div>
 
     <div class="link social">
-      <a id="mail-icon" title="Share via email" href="mailto:?subject={{title|urlencode}}&body={{description|urlencode}}%0A%0Ahttp%3A%2F%2Fprojects.sfchronicle.com%2F{{config.SITE_PATH}}%2F{{slug}}%2F">
+      <a id="mail-icon" title="Share via email" href="mailto:?subject={{title|urlencode}}&body={{description|urlencode}}%0A%0Ahttp%3A%2F%2Fprojects.sfchronicle.com%2F{{config.SITE_PATH}}%2F{% if slug %}%2F{{slug}}%2F{% endif %}">
         <i class="fa fa-envelope" aria-hidden="true"></i>
       </a>
     </div>
 
     <div class="link social">
-      <a id="facebook-icon" title="Share on Facebook" href="#" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fprojects.sfchronicle.com%2F{{config.SITE_PATH}}%2F{{slug}}%2F', 'facebook-share-dialog', 'width=626,height=436'); return false;">
+      <a id="facebook-icon" title="Share on Facebook" href="#" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fprojects.sfchronicle.com%2F{{config.SITE_PATH}}%2F{% if slug %}%2F{{slug}}%2F{% endif %}', 'facebook-share-dialog', 'width=626,height=436'); return false;">
         <i class="fa fa-facebook"></i>
       </a>
     </div>
     
     <div class="link social">
-      <a id="twitter-icon" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fprojects.sfchronicle.com%2F{{config.SITE_PATH}}%2F{{slug}}%2F&text={{twitter_text|urlencode}}&hashtags=SFHomelessProject">
+      <a id="twitter-icon" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fprojects.sfchronicle.com%2F{{config.SITE_PATH}}{% if slug %}%2F{{slug}}%2F{% endif %}&text={{twitter_text|urlencode}}&hashtags={{config.HASHTAG}}">
         <i class="fa fa-twitter"></i>
       </a>
     </div>
