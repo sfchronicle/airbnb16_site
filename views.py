@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from flask import render_template, redirect, url_for
 
 from app import app, db, freezer
@@ -48,7 +46,7 @@ def scofflaws():
     return render_template('scofflaws.html',
         slug='',
         title='Most Airbnb hosts ignore SF vacation-rental laws',
-        description="Special report: Turning houses into full-time hotels is a huge violation. But there are other problems — and new changes coming to how existing rules are enforced.",
+        description="Special report Turning houses into fulltime hotels is a huge violation. But there are other problems - and new changes coming to how existing rules are enforced.",
         twitter_text="Most Airbnb hosts ignore SF vacation-rental laws.")
 
 @app.route('/multiple/')
@@ -64,7 +62,7 @@ def economics():
     return render_template('economics.html',
         slug='',
         title="Is Airbnb to blame for high housing prices in SF?",
-        description="Special report: Some say companies like Airbnb drive up rent, but the impact is strongest at the micro level — in popular areas where rentals are most concentrated.",
+        description="Special report: Some say companies like Airbnb drive up rent, but the impact is strongest at the micro level - in popular areas where rentals are most concentrated.",
         twitter_text="Is Airbnb to blame for high housing prices in SF?")
 
 @app.route('/methodology/')
