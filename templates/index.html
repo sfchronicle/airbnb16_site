@@ -52,9 +52,9 @@
 	</div>
 
 	{% include '_components/_related_stories.html' %}
-	
+
 	{% include '_components/_footer.html' %}
-	
+
 </main>
 {% endblock %}
 
@@ -68,6 +68,9 @@
 	});
 
 	$(document).foundation();
+
+	var pymParentSankey = new pym.Parent('airbnb_sankey', 'http://projects.sfchronicle.com/2016/airbnb2016/sankeyoverview/index.html', {});
+
 </script>
 
 {% endblock %}

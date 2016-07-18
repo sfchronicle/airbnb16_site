@@ -48,22 +48,24 @@
 	</div>
 
 	{% include '_components/_related_stories.html' %}
-	
+
 	{% include '_components/_footer.html' %}
-	
+
 </main>
 {% endblock %}
 
 {% block javascript %}
 
-<!-- <script src="http://projects.sfchronicle.com/shared/js/pym.min.js"></script> -->
+<script src="http://projects.sfchronicle.com/shared/js/pym.min.js"></script>
 
 <script>
 	$(document).ready(function() {
 		App.init();
 	});
-	
+
 	$(document).foundation();
-	
+
+	var pymParentDatabase = new pym.Parent('airbnb_database', 'http://projects.sfchronicle.com/2016/airbnb2016/database/index.html', {});
+
 </script>
 {% endblock %}
