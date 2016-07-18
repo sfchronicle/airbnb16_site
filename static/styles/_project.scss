@@ -64,14 +64,33 @@ p {
   padding: 0 15px;
 }
 
-.main-img {
+.background-img {
     height: 800px;
     background-size: cover;
     background-position: center center;
     position: relative;
     display: block;
     z-index: 1;
+
+    @media #{$mobile} {
+      height: 640px;
+    }
+
+    &.overview {
     background-image: url("../images/overview/1.jpg");
+    }
+
+    &.economics {
+    background-image: url("../images/overview/1.jpg");
+    }
+
+    &.multiple {
+    background-image: url("../images/overview/1.jpg");
+    }
+
+    &.scofflaws {
+    background-image: url("../images/overview/1.jpg");
+    }
 }
 
 .dim {
@@ -349,13 +368,21 @@ header {
     width: 100%;
     top: 40px;
     background: white;
-    height: 200px;
+    height: 250px;
     padding-top: 10px;
     box-shadow: 0 0 6px 0 #696969;
 
     ul {
       text-align: center;
       padding: 0;
+    }
+
+    li {
+
+      a{
+        color:$link;
+        text-decoration:none;
+      }
     }
 }
 
@@ -448,6 +475,10 @@ footer {
 
 .title-container {
   margin-bottom: 2.5em;
+
+  &.methodology {
+    margin-top: 3.5em;
+  }
 }
 
 .title {
@@ -598,30 +629,31 @@ footer {
 
 .dont-miss {
   max-width: 900px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+  text-align: center;
+  margin: 2em auto;
   font-size: 17px;
-  font-family: $block-graphics;
+
+  button {
+    background: #e4e4e4;
+    text-transform: uppercase;
+    font-family:$sans-serif;
+  }
+
+  a {
+    color:#6C85A5;
+    text-transform:uppercase;
+  }
 
   .story {
-    flex: 0 0 25%;
 
-    &.three {
-      flex: 0 0 33%;
-
-        @media screen and (max-width: 560px) {
-            flex: 1 1 100%;
-       }
-    }
-
-
-     @media screen and (max-width: 560px) {
-          flex: 1 1 100%;
-     }
-
-    & a {
+  width: 100%;
+  text-align: center;
+  min-height: 300px;
+  background-size: cover;
+  position: relative;
+  background-position: top;
+  
+    a {
         text-decoration: none;
         color: #333;
         line-height: 1.2;
@@ -631,10 +663,27 @@ footer {
   .padded {
     padding: 10px;
   }
-  h4 {
-    margin-top:2px;
+  .next-story {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    z-index:3;
+    font-size:2em;
+    font-family:$serif-bold;
+    text-transform: none;
     line-height: 1.2;
-    font-size:0.9em;
+    padding: 0 15px;
+    max-width: 560px;
+    margin: 0 auto;
+
+    @media #{$mobile} {
+      font-size:1.8em;
+      top:30%;
+    }
+
+
   }
   img {
     width: 100%;
@@ -677,6 +726,7 @@ hr{
   margin-top:2em;
   border-top: 1px solid #ccc;
   border-bottom: none;
+  width: 75%;
 }
 
 .interactive{

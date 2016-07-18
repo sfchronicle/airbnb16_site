@@ -12,15 +12,19 @@
     </div>
 
     <div class="link show-for-medium">
-      <a class="" href="{{ url_for('scofflaws') }}">Legal Hoops</a>
+      <a class="" href="{{ url_for('scofflaws') }}">Laws</a>
     </div>
 
     <div class="link show-for-medium">
-      <a class="" href="{{ url_for('multiple') }}">Hostel Territory</a>
+      <a class="" href="{{ url_for('multiple') }}">Hostels</a>
     </div>
 
     <div class="link show-for-medium">
-      <a class="" href="{{ url_for('economics') }}">Lodging Complaints</a>
+      <a class="" href="{{ url_for('economics') }}">Economics</a>
+    </div>
+
+    <div class="link show-for-medium">
+      <a class="" href="{{ url_for('methodology') }}">Methodology</a>
     </div>
 
     <div class="link menu-btn" data-responsive-toggle="mobile-menu" data-hide-for="medium">
@@ -54,10 +58,11 @@
 <div id="mobile-menu" class="mobile-menu hide-for-medium">
 
 <ul class="menu vertical">
-  <li><a href="#">Overview</a></li>
-  <li><a href="#">Scofflaws</a></li>
-  <li><a href="#">Multiple</a></li>
-  <li><a href="#">Economics</a></li>
+  <li><a href="{{ url_for('index') }}">Overview</a></li>
+  <li><a href="{{ url_for('scofflaws') }}">Laws</a></li>
+  <li><a href="{{ url_for('multiple') }}">Hostels</a></li>
+  <li><a href="{{ url_for('economics') }}">Economics</a></li>
+  <li><a href="{{ url_for('methodology') }}">Methodology</a></li>
 </ul>
 
 </div>

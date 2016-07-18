@@ -16,7 +16,7 @@
 	{% include '_components/_header.html' %}
 
 	<div class="title-container">
-		<div class="main-img">
+		<div class="background-img overview">
 		    <div class="dim"></div>
 			<div class="over-img">
 				<h1 class="title long">Airbnb and rivals flourish in San Francisco amid regulatory crackdown</h1>
@@ -27,6 +27,14 @@
 	</div>
 
 	{% include '_text/overview.html' %}
+
+
+	<div class="dont-miss">
+		{% import '_components/_nextone.html' as next %}
+		<!-- Variables are title, url and image url -->
+		{{ next.story('Most hosts ignore vacation-rental laws in San Francisco','#','../static/images/overview/1.jpg') }}
+	
+	</div>
 
 	<div class="max">
 		<hr>
@@ -50,8 +58,6 @@
 			</div>
 		</div>
 	</div>
-
-	{% include '_components/_related_stories.html' %}
 
 	{% include '_components/_footer.html' %}
 

@@ -41,18 +41,18 @@ def index():
     	description="Special report: Data on Airbnb shows that visitors continue to flock to the rentals - often in defiance of city requirements to register these impromptu inns.",
     	twitter_text="Airbnb, rivals flourish in SF amid regulatory crackdown.")
 
-@app.route('/scofflaws/')
+@app.route('/laws/')
 def scofflaws():
     return render_template('scofflaws.html',
-        slug='',
+        slug='laws',
         title='Most Airbnb hosts ignore SF vacation-rental laws',
         description="Special report Turning houses into fulltime hotels is a huge violation. But there are other problems - and new changes coming to how existing rules are enforced.",
         twitter_text="Most Airbnb hosts ignore SF vacation-rental laws.")
 
-@app.route('/multiple/')
+@app.route('/hostels/')
 def multiple():
     return render_template('multiple.html',
-        slug='',
+        slug='hostels',
         title="Home-based hostels spring up on Airbnb",
         description="Special report: Home-based hostels appear to be on the rise in San Francisco and some of the informal hostels seem to be big business.",
         twitter_text="Home-based hostels spring up on Airbnb.")
@@ -60,7 +60,7 @@ def multiple():
 @app.route('/economics/')
 def economics():
     return render_template('economics.html',
-        slug='',
+        slug='economics',
         title="Is Airbnb to blame for high housing prices in SF?",
         description="Special report: Some say companies like Airbnb drive up rent, but the impact is strongest at the micro level - in popular areas where rentals are most concentrated.",
         twitter_text="Is Airbnb to blame for high housing prices in SF?")
@@ -68,7 +68,7 @@ def economics():
 @app.route('/methodology/')
 def methodology():
     return render_template('methodology.html',
-        slug='',
+        slug='methodology',
         title='',
         description="",
         twitter_text='')

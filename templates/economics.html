@@ -17,17 +17,24 @@
 	{% include '_components/_header.html' %}
 
 	<div class="title-container">
-		<div>
-			<h1 class="title long">Is Airbnb to blame for high housing prices in SF?</h1>
-			<p class="author">By Carolyn Said</p>
-			<p class="date">July 24, 2016</p>
-			<div class="full-width-img">
-			    <img src="{{ url_for('static', filename='images/mental/01.jpg') }}">
+		<div class="background-img economics">
+		    <div class="dim"></div>
+			<div class="over-img">
+				<h1 class="title long">Is Airbnb to blame for high housing prices in SF?</h1>
+				<p class="author">By Carolyn Said</p>
+				<p class="date">July 24, 2016</p>
 			</div>
 		</div>
 	</div>
 
 	{% include '_text/economics.html' %}
+
+	<div class="dont-miss">
+		{% import '_components/_nextone.html' as next %}
+		<!-- Variables are title, url and image url -->
+		{{ next.story('Methodology','#','../static/images/overview/1.jpg') }}
+	
+	</div>
 
 	<div class="max">
 		<hr>
@@ -46,8 +53,6 @@
 			</div>
 		</div>
 	</div>
-
-	{% include '_components/_related_stories.html' %}
 
 	{% include '_components/_footer.html' %}
 
