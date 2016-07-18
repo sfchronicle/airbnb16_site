@@ -454,16 +454,15 @@ footer {
   font-size: 60px;
   padding: 0 10px;
   text-align: center;
-  margin: 10px auto;
+  margin: 10px auto 0;
   max-width: 835px;
 
   &.long {
     font-size: 50px;
     line-height: 1.2;
-    margin: 20px auto;
+    margin: 20px auto 0;
 
       @media #{$mobile} {
-      line-height: 1;
       font-size: 1.8em;
     }
   }
@@ -542,19 +541,12 @@ footer {
 }
 
 .whatif-box {
-  max-width: 750px;
   margin: auto;
   text-align: center;
   margin-bottom: 20px;
-  font-family: $banner;
   font-size: 18px;
-  font-style: italic;
-  @media #{$tablet} {
-    width: 80%;
-  }
   @media #{$mobile} {
     font-size: 14px;
-    width: 90%;
   }
 }
 

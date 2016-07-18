@@ -64,3 +64,11 @@ def economics():
         title='',
         description="",
         twitter_text='')
+
+@app.route('/methodology/')
+def methodology():
+    return render_template('methodology.html',
+        slug='',
+        title='',
+        description="",
+        twitter_text='')

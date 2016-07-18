@@ -6,10 +6,10 @@
 {% include '_components/_social.html' %}
 {% endblock %}
 
-{% block hearst_title %}Economics{% endblock %}
+{% block hearst_title %}Methodology{% endblock %}
 {% block hearst_class %}article{% endblock %}
 {% block hearst_date %}2016-07-24 00:00:00{% endblock %}
-{% block author %}{% endblock %}
+{% block author %}Lucio Villa, Emma O'Neill, Benjamin Din{% endblock %}
 
 {% block content %}
 <main class="container">
@@ -18,16 +18,14 @@
 
 	<div class="title-container">
 		<div>
-			<h1 class="title long">Is Airbnb to blame for high housing prices in SF?</h1>
+			<h1 class="title long">Methodology</h1>
+			<p class="whatif-box">How The Chronicle crunched the Airbnb data</p>
 			<p class="author">By Carolyn Said</p>
 			<p class="date">July 24, 2016</p>
-			<div class="full-width-img">
-			    <img src="{{ url_for('static', filename='images/mental/01.jpg') }}">
-			</div>
 		</div>
 	</div>
 
-	{% include '_text/economics.html' %}
+	{% include '_text/methodology.html' %}
 
 	<div class="max">
 		<hr>
@@ -62,8 +60,7 @@
 	$(document).ready(function() {
 		App.init();
 	});
-	
+
 	$(document).foundation();
-	
 </script>
 {% endblock %}

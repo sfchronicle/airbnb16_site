@@ -8,7 +8,7 @@
 
 {% block hearst_title %}Overview{% endblock %}
 {% block hearst_date %}2016-07-24 00:00:00{% endblock %}
-{% block author %}Lucio Villa, Emma O'Neill, Benjamin Din{% endblock %}
+{% block author %}Carolyn Said, Lucio Villa, Emma O'Neill, Benjamin Din{% endblock %}
 
 {% block content %}
 <main class="container">
@@ -20,8 +20,8 @@
 		    <div class="dim"></div>
 		</div>
 
-		<h1 class="title long over-img">Airbnb, HomeAway, FlipKey flourish in SF</h1>
-		<!-- {% include '_components/_social_links.html' %} -->
+		<h1 class="title long over-img">Airbnb and rivals flourish in San Francisco amid regulatory crackdown</h1>
+		<p class="whatif-box">Airbnb and rivals flourish in SF amid regulatory crackdown</p>
 		<p class="author">By Carolyn Said</p>
 		<p class="date">July 24, 2016</p>
 	</div>
@@ -36,6 +36,11 @@
 			<div class="group">
 				<p>Reporter</p>
 				{{ credit.info('Carolyn Said', 'csaid', 'CSaid' ) }}
+			</div>
+			<div class="group">
+				<p>Contributing reporters</p>
+				{{ credit.info('Jessica Floum', 'jfloum', 'jfloum' ) }}
+				{{ credit.info('Joaquin Palomino', 'jpalomino', 'JoaquinPalomino' ) }}
 			</div>
 			<div class="group">
 				<p>Interactive producers</p>
@@ -61,6 +66,7 @@
 	$(document).ready(function() {
 		App.init();
 	});
+
 	$(document).foundation();
 </script>
 
