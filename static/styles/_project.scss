@@ -76,23 +76,23 @@ p {
     @media #{$mobile} {
       height: 640px;
     }
+}
 
-    &.overview {
-    background-image: url("../images/overview/1.jpg");
-    }
+.overview {
+background-image: url("../images/overview/1.jpg");
+}
 
-    &.economics {
-      // background-image: url("../images/overview/1.jpg");
-    background-image: url("../images/econ/airbnb0724_econ_PH1_op1.jpg");
-    }
+&.economics {
+  // background-image: url("../images/overview/1.jpg");
+background-image: url("../images/econ/airbnb0724_econ_PH1_op1.jpg");
+}
 
-    &.multiple {
-    background-image: url("../images/overview/1.jpg");
-    }
+&.multiple {
+background-image: url("../images/hostels/01.jpg");
+}
 
-    &.scofflaws {
-    background-image: url("../images/overview/1.jpg");
-    }
+.scofflaws {
+background-image: url("../images/scofflaws/0.jpg");
 }
 
 .dim {
