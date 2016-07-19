@@ -58,6 +58,7 @@ p {
   width: 100%;
   z-index: 99;
   left: 0;
+  height: 37px;
 }
 .row{
   max-width: 730px;
@@ -263,12 +264,17 @@ header {
 }
 
 .link {
-  margin: 0 10px;
-  padding: 5px 0 7px;
+  padding: 5px 10px 7px;
   font-size:16px;
   font-family: $serif;
   vertical-align: text-bottom;
   cursor: pointer;
+
+  &.active {
+    background: #a2a2a2;
+    color: #fff;
+  }
+
   &.special {
 
     a {

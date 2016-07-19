@@ -11,20 +11,20 @@
       <a class="special-head" href="{{ url_for('index') }}">{{config.PROJ_TITLE}}</a>
     </div>
 
-    <a class="" href="{{ url_for('scofflaws') }}">
-      <div class="link show-for-medium">Laws</div>
+    <a href="{{ url_for('scofflaws') }}">
+      <div class="link show-for-medium {%- if request.path == '/laws/' %} active{% endif %}">Laws</div>
     </a>
 
-    <a class="" href="{{ url_for('multiple') }}">
-      <div class="link show-for-medium">Hostels</div>
+    <a href="{{ url_for('multiple') }}">
+      <div class="link show-for-medium {%- if request.path == '/hostels/' %} active{% endif %}">Hostels</div>
     </a>
 
-    <a class="" href="{{ url_for('economics') }}">
-      <div class="link show-for-medium">Economics</div>
+    <a href="{{ url_for('economics') }}">
+      <div class="link show-for-medium {%- if request.path == '/economics/' %} active{% endif %}">Economics</div>
     </a>
 
-    <a class="" href="{{ url_for('methodology') }}">
-      <div class="link show-for-medium">Methodology</div>
+    <a href="{{ url_for('methodology') }}">
+      <div class="link show-for-medium {%- if request.path == '/methodology/' %} active{% endif %}">Methodology</div>
     </a>
 
     <div class="link menu-btn" data-responsive-toggle="mobile-menu" data-hide-for="medium">
