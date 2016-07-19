@@ -30,31 +30,14 @@
 	{% include '_text/multiple.html' %}
 
 	<div class="dont-miss">
-		{% import '_components/_nextone.html' as next %}
-		<!-- Variables are title, url and image url -->
-		{{ next.story('Is Airbnb to blame for high housing prices in SF?','#','../static/images/overview/1.jpg') }}
-	
-	</div>
-
-	<div class="max">
-		<hr>
-		<div class="credits">
-			{% import '_components/_credits.html' as credit %}
-			<!-- Variables are name, email slug and twitter handle -->
-			<div class="group">
-				<p>Reporter</p>
-				{{ credit.info('Carolyn Said', 'csaid', 'CSaid' ) }}
+		<a href="{{ url_for('economics') }}">
+			<button>Next story</button>
+			<div class="story" style="background-image:url('../static/images/overview/2.jpg')">
+				<div class="next-story">Is Airbnb to blame for high housing prices in SF?</div>
+				<div class="dim"></div>
 			</div>
-			<div class="group">
-				<p>Interactive producers</p>
-				{{ credit.info('Lucio Villa', 'lvilla', 'luciovilla' ) }}
-				{{ credit.info('Benjamin Din', 'bdin', 'benjamindin' ) }}
-				{{ credit.info("Emma O'Neill", "eoneill", "emmaruthoneill" ) }}
-			</div>
-		</div>
+		</a>
 	</div>
-	
-	{% include '_components/_footer.html' %}
 	
 </main>
 {% endblock %}
