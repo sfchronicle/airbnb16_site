@@ -82,7 +82,8 @@ p {
     }
 
     &.economics {
-    background-image: url("../images/overview/1.jpg");
+      // background-image: url("../images/overview/1.jpg");
+    background-image: url("../images/econ/airbnb0724_econ_PH1_op1.jpg");
     }
 
     &.multiple {
@@ -480,7 +481,6 @@ footer {
 }
 
 .title-container {
-  margin-bottom: 2.5em;
 
   &.methodology {
     margin-top: 3.5em;
@@ -557,6 +557,9 @@ footer {
   margin-top: 5px;
   padding: 0 10px;
   max-width: 100%;
+  &.landing {
+    margin-bottom: 2.5em;
+  }
 
   .year {
     font-family:$banner;
@@ -658,7 +661,7 @@ footer {
   background-size: cover;
   position: relative;
   background-position: top;
-  
+
     a {
         text-decoration: none;
         color: #333;
