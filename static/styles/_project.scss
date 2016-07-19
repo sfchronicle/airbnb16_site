@@ -76,22 +76,22 @@ p {
     @media #{$mobile} {
       height: 640px;
     }
+}
 
-    &.overview {
-    background-image: url("../images/overview/1.jpg");
-    }
+.overview {
+background-image: url("../images/overview/1.jpg");
+}
 
-    &.economics {
-    background-image: url("../images/overview/1.jpg");
-    }
+.economics {
+background-image: url("../images/economics/1.jpg");
+}
 
-    &.multiple {
-    background-image: url("../images/overview/1.jpg");
-    }
+.multiple {
+background-image: url("../images/multiple/1.jpg");
+}
 
-    &.scofflaws {
-    background-image: url("../images/overview/1.jpg");
-    }
+.scofflaws {
+background-image: url("../images/scofflaws/0.jpg");
 }
 
 .dim {
