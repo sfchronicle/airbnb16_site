@@ -83,20 +83,23 @@ p {
 }
 
 .overview {
-background-image: url("../images/overview/1.jpg");
+  background-image: url("../images/overview/1.jpg");
 }
 
-&.economics {
-  // background-image: url("../images/overview/1.jpg");
-background-image: url("../images/econ/airbnb0724_econ_PH1_op1.jpg");
+.economics {
+  background-image: url("../images/econ/airbnb0724_econ_PH1_op1.jpg");
 }
 
-&.multiple {
-background-image: url("../images/hostels/01.jpg");
+.multiple {
+  background-image: url("../images/hostels/01.jpg");
 }
 
 .scofflaws {
-background-image: url("../images/scofflaws/0.jpg");
+  background-image: url("../images/scofflaws/0.jpg");
+}
+
+.methodology {
+  background: #6C85A5;
 }
 
 .dim {
@@ -105,7 +108,7 @@ background-image: url("../images/scofflaws/0.jpg");
     left: 0;
     right: 0;
     z-index: 2;
-    opacity: .5;
+    opacity: .4;
     height: 100%;
     background-color: #000;
     width: 100%;
@@ -486,7 +489,7 @@ footer {
 
 .title-container {
 
-  &.methodology {
+  &.top-margin {
     margin-top: 3.5em;
   }
 }
