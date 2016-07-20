@@ -69,6 +69,6 @@ def economics():
 def methodology():
     return render_template('methodology.html',
         slug='methodology',
-        title='',
-        description="",
-        twitter_text='')
+        title='Methodology',
+        description="How The Chronicle crunched the Airbnb data",
+        twitter_text='How The Chronicle crunched the Airbnb data')

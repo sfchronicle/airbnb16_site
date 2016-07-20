@@ -377,10 +377,11 @@ header {
 }
 
 #mobile-menu{
+    display:none;
     position: fixed;
     z-index: 5;
     width: 100%;
-    top: 40px;
+    top: 37px;
     background: white;
     height: 250px;
     padding-top: 10px;
