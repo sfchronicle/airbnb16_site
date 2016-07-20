@@ -6,10 +6,8 @@
 {% include '_components/_social.html' %}
 {% endblock %}
 
-{% block hearst_title %}Scofflaws{% endblock %}
+{% block hearst_title %}Laws{% endblock %}
 {% block hearst_class %}article{% endblock %}
-{% block hearst_date %}2016-07-24 00:00:00{% endblock %}
-{% block author %}Lucio Villa, Emma O'Neill, Benjamin Din{% endblock %}
 
 {% block content %}
 <main class="container">
@@ -20,7 +18,7 @@
 		<div class="background-img scofflaws">
 		    <div class="dim"></div>
 			<div class="over-img">
-				<h1 class="title long">Most hosts ignore vacation-rental laws in San Francisco</h1>
+				<h1 class="title long">Most hosts ignore vacation-rental laws in SF</h1>
 				<p class="author">By <a href="mailto:csaid@sfchronicle.com">Carolyn Said</a></p>
 				<p class="date">July 22, 2016</p>
 			</div>
@@ -35,7 +33,9 @@
 		<a href="{{ url_for('multiple') }}">
 			<button>Next story</button>
 			<div class="story multiple">
-				<div class="next-story">Home-based hostels spring up on Airbnb</div>
+				<div class="next-story">
+					<p>Home-based hostels spring up on Airbnb</p>
+				</div>
 				<div class="dim"></div>
 			</div>
 		</a>
