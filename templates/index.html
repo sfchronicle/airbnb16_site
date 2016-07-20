@@ -7,8 +7,6 @@
 {% endblock %}
 
 {% block hearst_title %}Overview{% endblock %}
-{% block hearst_date %}2016-07-24 00:00:00{% endblock %}
-{% block author %}Carolyn Said, Lucio Villa, Emma O'Neill, Benjamin Din{% endblock %}
 
 {% block content %}
 <main class="container">
@@ -35,7 +33,9 @@
 		<a href="{{ url_for('scofflaws') }}">
 			<button>Next story</button>
 			<div class="story scofflaws">
-				<div class="next-story">Most hosts ignore vacation-rental laws in SF</div>
+				<div class="next-story">
+					<p>Most hosts ignore vacation-rental laws in San Francisco</p>
+				</div>
 				<div class="dim"></div>
 			</div>
 		</a>

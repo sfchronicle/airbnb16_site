@@ -6,10 +6,8 @@
 {% include '_components/_social.html' %}
 {% endblock %}
 
-{% block hearst_title %}Scofflaws{% endblock %}
+{% block hearst_title %}Laws{% endblock %}
 {% block hearst_class %}article{% endblock %}
-{% block hearst_date %}2016-07-24 00:00:00{% endblock %}
-{% block author %}Lucio Villa, Emma O'Neill, Benjamin Din{% endblock %}
 
 {% block content %}
 <main class="container">
@@ -35,7 +33,9 @@
 		<a href="{{ url_for('multiple') }}">
 			<button>Next story</button>
 			<div class="story multiple">
-				<div class="next-story">Home-based hostels spring up on Airbnb</div>
+				<div class="next-story">
+					<p>Home-based hostels spring up on Airbnb</p>
+				</div>
 				<div class="dim"></div>
 			</div>
 		</a>
