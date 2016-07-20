@@ -27,7 +27,7 @@
       <div class="link show-for-medium {%- if request.path == '/methodology/' %} active{% endif %}">Methodology</div>
     </a>
 
-    <div class="link menu-btn" data-responsive-toggle="mobile-menu" data-hide-for="medium">
+    <div id="menu-btn" class="link menu-btn hide-for-medium">
       <button class="menu-icon" type="button" data-toggle></button>
     </div>
 
@@ -55,7 +55,7 @@
 </header>
 
 
-<div id="mobile-menu" class="mobile-menu hide-for-medium">
+<div id="mobile-menu" class="mobile-menu">
 
 <ul class="menu vertical">
   <li><a href="{{ url_for('index') }}">Overview</a></li>

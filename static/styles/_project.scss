@@ -227,7 +227,7 @@ header {
 }
 
 .menu-icon{
-  background: #333;
+  background: $link;
   padding: 11px 19px 10px 15px;
 }
 
@@ -377,10 +377,11 @@ header {
 }
 
 #mobile-menu{
+    display:none;
     position: fixed;
     z-index: 5;
     width: 100%;
-    top: 40px;
+    top: 37px;
     background: white;
     height: 250px;
     padding-top: 10px;
@@ -476,9 +477,6 @@ footer {
       vertical-align: bottom;
     }
   }
-  @media #{$mobile} {
-    visibility: hidden;
-  }
 
   &::after {
     clear: both;
@@ -506,6 +504,10 @@ footer {
     font-size: 50px;
     line-height: 1.2;
     margin: 20px auto 0;
+
+  &.text-width {
+    max-width:800px;
+  }
 
       @media #{$mobile} {
       font-size: 1.8em;
@@ -780,6 +782,7 @@ footer {
 
     p {
       margin:0 auto;
+      font-size:15px;
     }
   }
 }
