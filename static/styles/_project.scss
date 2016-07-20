@@ -335,12 +335,6 @@ header {
   -moz-box-shadow: 0 0 6px 0 $dark-gray;
   box-shadow: 0 0 6px 0 $dark-gray;
 
-  .special-head {
-    color: $gray-blue;
-    font-family: $serif-bold;
-    font-size: 16px;
-  }
-
   a {
     text-decoration:none;
   }
@@ -504,6 +498,8 @@ footer {
     font-size: 50px;
     line-height: 1.2;
     margin: 20px auto 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
 
   &.text-width {
     max-width:800px;
@@ -522,6 +518,15 @@ footer {
   color: white;
   left: 0;
   right: 0;
+}
+
+.specialhead {
+  text-align: center;
+  text-transform: uppercase;
+  color: lighten($gray-blue,5%);
+  font-family: $banner;
+  font-size: 20px;
+  margin-bottom: 0;
 }
 
 .subhead {
