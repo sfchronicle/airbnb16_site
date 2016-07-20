@@ -525,8 +525,9 @@ footer {
   text-transform: uppercase;
   color: lighten($gray-blue,5%);
   font-family: $banner;
-  font-size: 20px;
+  font-size: 17px;
   margin-bottom: 0;
+  background-color: rgba(1,1,1,0.2);
 }
 
 .subhead {
