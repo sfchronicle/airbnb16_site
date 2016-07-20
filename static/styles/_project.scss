@@ -18,6 +18,10 @@ li {
   }
 }
 
+.fa {
+  color: $gray-blue;
+}
+
 .max{
   max-width:900px;
   margin:0 auto;
@@ -633,6 +637,51 @@ footer {
     font-size: 15px;
     text-align: center;
     margin-bottom: 40px;
+}
+
+.dont-miss-related {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-family: $block-graphics;
+
+  .story {
+    flex: 0 0 25%;
+
+    &.three {
+      flex: 0 0 33%;
+
+        @media screen and (max-width: 560px) {
+            flex: 1 1 100%;
+       }
+    }
+
+
+     @media screen and (max-width: 560px) {
+          flex: 1 1 100%;
+     }
+
+    & a {
+        text-decoration: none;
+        color: #333;
+        line-height: 1.2;
+    }
+  }
+
+  .padded {
+    padding: 10px;
+  }
+  h4 {
+    margin-top:2px;
+    line-height: 1.2;
+    font-size:0.9em;
+  }
+  img {
+    width: 100%;
+  }
 }
 
 

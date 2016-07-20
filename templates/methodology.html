@@ -56,6 +56,21 @@
 		</div>
 	</div>
 
+	{% import '_components/_related_stories.html' as related %}
+	<div class="max">
+		<hr>
+		<div class="dont-miss-related">
+			{{ related.story("SF Homeless Project", 'http://projects.sfchronicle.com/sf-homeless/', '../static/images/related/dont-miss-homeless.jpg') }}
+
+			{{ related.story("Teachers struggle to stay in SF", 'http://projects.sfchronicle.com/2016/teacher-pay/', '../static/images/related/dont-miss-teacherpay.jpg') }}
+
+			{{ related.story("Living with AIDS", 'http://projects.sfchronicle.com/2016/living-with-aids/', '../static/images/related/aids_special.png') }}
+
+			{{ related.story("H-1B visas: who gets them, where they go", 'http://projects.sfchronicle.com/2016/visas/', '../static/images/related/dont-miss-visas.png') }}
+
+		</div>
+	</div>
+
 	{% include '_components/_footer.html' %}
 
 </main>
