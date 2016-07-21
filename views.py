@@ -68,7 +68,7 @@ def economics():
 @app.route('/methodology/')
 def methodology():
     return render_template('methodology.html',
-        slug='methodology',
+        slug='',
         title='Methodology',
         description="How The Chronicle crunched the Airbnb data",
-        twitter_text='How The Chronicle crunched the Airbnb data')
+        twitter_text='Airbnb, rivals flourish in SF amid regulatory crackdown.')
