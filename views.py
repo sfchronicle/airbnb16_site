@@ -4,7 +4,7 @@ from app import app, db, freezer
 from models import *
 
 # Site Path
-app.config['SITE_PATH'] = "2016%2Fairbnb"
+app.config['SITE_PATH'] = "2016/airbnb"
 
 # Project Title
 app.config['PROJ_TITLE'] = "Airbnb 2016"
