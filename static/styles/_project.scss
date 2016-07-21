@@ -529,11 +529,13 @@ footer {
 .specialhead {
   text-align: center;
   text-transform: uppercase;
-  color: lighten($gray-blue,5%);
-  font-family: $banner;
-  font-size: 17px;
+  color: #9bb5d8;
+  font-family: "Dispatch";
+  font-size: 15px;
   margin-bottom: 0;
-  background-color: rgba(1,1,1,0.2);
+  background-color: rgba(0, 0, 0, 0.61);
+  max-width: 320px;
+  padding: 2px 0px;
 }
 
 .paststorylink {
