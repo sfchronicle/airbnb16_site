@@ -46,14 +46,13 @@
 
 {% block javascript %}
 
-<script src="http://projects.sfchronicle.com/shared/js/pym.min.js"></script>
+<script src="{{ url_for('static', filename='scripts/responsive-frame.js') }}"></script>
 
 <script type="text/javascript">
 	$(document).ready(function() {
 		App.init();
 	});
 
-	var pymParentDatabase = new pym.Parent('airbnb_database', 'http://projects.sfchronicle.com/2016/airbnb2016/database/index.html', {});
-
+	
 </script>
 {% endblock %}
