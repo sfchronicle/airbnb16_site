@@ -37,7 +37,7 @@ twitter_text:
 @app.route('/')
 def index():
     return render_template('index.html',
-    	title="Airbnb, rivals flourish in SF amid regulatory crackdown",
+    	title="As city lowers boom, Airbnb and rivals thrive",
     	description="Special report: Data on Airbnb shows that visitors continue to flock to the rentals - often in defiance of city requirements to register these impromptu inns.",
     	twitter_text="Airbnb, rivals flourish in SF amid regulatory crackdown.")
 
@@ -45,7 +45,7 @@ def index():
 def scofflaws():
     return render_template('scofflaws.html',
         slug='laws',
-        title='Most Airbnb hosts ignore SF vacation-rental laws',
+        title='For most Airbnb hosts, rental rules mean little',
         description="Special report Turning houses into fulltime hotels is a huge violation. But there are other problems - and new changes coming to how existing rules are enforced.",
         twitter_text="Most Airbnb hosts ignore SF vacation-rental laws.")
 
@@ -53,7 +53,7 @@ def scofflaws():
 def multiple():
     return render_template('multiple.html',
         slug='hostels',
-        title="Home-based hostels spring up on Airbnb",
+        title="Airbnb finds SF hostel territory",
         description="Special report: Home-based hostels appear to be on the rise in San Francisco and some of the informal hostels seem to be big business.",
         twitter_text="Home-based hostels spring up on Airbnb.")
 
