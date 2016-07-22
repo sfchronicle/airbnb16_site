@@ -45,7 +45,7 @@ def index():
 def scofflaws():
     return render_template('scofflaws.html',
         slug='laws',
-        title='For most Airbnb hosts, rental rules mean little',
+        title='For most hosts, rental rules mean little',
         description="Special report Turning houses into fulltime hotels is a huge violation. But there are other problems - and new changes coming to how existing rules are enforced.",
         twitter_text="Most Airbnb hosts ignore SF vacation-rental laws.")
 
